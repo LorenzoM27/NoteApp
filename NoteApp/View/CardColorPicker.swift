@@ -9,7 +9,14 @@ import SwiftUI
 
 struct CardColorPicker: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack(spacing: 10) {
+            
+            ForEach(1...5, id: \.self) { index in
+                Circle()
+                    .fill(.red.gradient)
+                    .frame(width: 20, height: 20)
+            }
+        }
     }
 }
 
